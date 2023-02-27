@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  apis:
+    image: apis
+    build:
+      dockerfile: Dockerfile
+      context: "./apis"
+    ports : 
+      - 5000:5000
+    volumes:
+      - ./data:/etc/notes
+
+  notes:
+    image: notes
+    build:
+      dockerfile: Dockerfile
+      context: ./notes
+    ports : 
+      - 3000:3000
+    volumes:
+      - ./data:/etc/notes
+
+volumes:
+  data:
+     external: true
+ 
