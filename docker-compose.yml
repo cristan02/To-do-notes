@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  apis:
+    image: backend
+    build: 
+      context: ./apis
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - ./apis:/apis
+
+  notes:
+    image: frontend
+    build: 
+      context: ./notes
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./notes:/notes

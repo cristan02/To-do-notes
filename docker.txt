@@ -1,0 +1,9 @@
+docker build -f Dockerfile -t notes .
+docker build -f Dockerfile -t apis .
+
+docker-compose build
+
+docker run -dp 3000:3000 --mount type=volume,src=notes-db,target=/etc/notes frontend 
+docker run -dp 5000:5000 --mount type=volume,src=notes-db,target=/etc/notes backend
+
+docker-compose -up -d
