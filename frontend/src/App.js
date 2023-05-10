@@ -69,7 +69,7 @@ function App() {
               <label class="block text-gray-400 text-lg font-bold mb-2" for="tit">
                 Title
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tit" type="text" placeholder="Username" onChange={(e)=>setTitle(e.target.value)}/>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tit" type="text" placeholder="Enter title" onChange={(e)=>setTitle(e.target.value)}/>
             </div>
             <p className='p-2'></p>
             <div class="mb-6">
@@ -87,26 +87,4 @@ function App() {
 
   );
 }
-const notes = [
-  {
-    title : "Title",
-    des : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem"
-  },
-  {
-    title : "Title",
-    des : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem"
-  },
-  {
-    title : "Title",
-    des : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem"
-  },
-  {
-    title : "Title",
-    des : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem"
-  },
-  {
-    title : "Title",
-    des : "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem"
-  },
-]
 export default App;
