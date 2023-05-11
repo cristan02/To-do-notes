@@ -8,11 +8,11 @@ This application used reactJs for front end and nodeJS for backend. SQLlite data
   2) cd to frontend dir `cd frontend`<br/>
       i)  `npm install`<br/>
       ii) `npm start`<br/>
-        ~ this will start your frontend on `http://localhost:3000`
+        ~ this will start your frontend on http://localhost:3000
   3) cd to backend dir `cd backend`<br/>
       i) `npm install`<br/>
       ii) `npm start`<br/>
-        ~ this will start your backend express server on `http://localhost:5000`
+        ~ this will start your backend express server on http://localhost:5000
        
 ## OR
   
